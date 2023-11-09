@@ -55,13 +55,13 @@ html, body {
 	grid-template:
 				"a a a b b b b b" auto / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-#banner {
+#skull {
     min-height: 100%;
 	background-image: url("../_background_image.jpg");
 	background-size: cover;
 	grid-area: a;
 }
-#banner h1 {
+#skull h1 {
 	text-align: center;
 	margin-top: 13rem;
 	background-color: rgba(245, 245, 245, 0.726);
@@ -70,8 +70,8 @@ html, body {
 	font-family: "Monoton", sans-serif;
 	padding: 0.5rem;
 }
-#form-area {
-	padding-top: 13rem;
+#spine {
+	padding-top: 8rem;
 	grid-area: b;
 }
 article h2 {
@@ -82,11 +82,28 @@ article h2 {
 	padding-left: 3rem;
 	padding-right: 11rem;
 }
-#form {
+#sign-up-area {
 	background-color: rgb(236, 236, 236);
+	padding-bottom: 3rem;
 }
-#form h2 {
+#sign-up-area h2 {
 	padding-left: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	font-size: 1.4rem;
 	font-family: "Pridi", sans-serif;
+}
+form {
+	padding-left: 3rem;
+}
+ul li {
+	display: inline-flex;
+	flex-direction: column;
+}
+input, label {
+	display: flex;
+	flex-direction: column;
+}
+input {
+	margin-right: 5rem;
 }
