@@ -63,7 +63,7 @@ html, body {
 }
 #skull h1 {
 	text-align: center;
-	margin-top: 13rem;
+	margin-top: 12rem;
 	background-color: rgba(245, 245, 245, 0.726);
 	font-size: 5rem;
 	color: black;
@@ -71,11 +71,11 @@ html, body {
 	padding: 0.5rem;
 }
 #spine {
-	padding-top: 8rem;
+	padding-top: 6rem;
 	grid-area: b;
 }
 article h2 {
-	font-family: "Pridi", sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	padding-bottom: 2rem;
 	font-size: 1.4rem;
@@ -84,14 +84,15 @@ article h2 {
 }
 #sign-up-area {
 	background-color: rgb(236, 236, 236);
-	padding-bottom: 3rem;
+	padding-bottom: 2.5rem;
 }
 #sign-up-area h2 {
 	padding-left: 3rem;
-	padding-top: 1rem;
+	padding-top: 1.5rem;
 	padding-bottom: 1rem;
 	font-size: 1.4rem;
-	font-family: "Pridi", sans-serif;
+	font-family: "Poppins", sans-serif;
+	color: rgba(0, 0, 0, 0.855);
 }
 form {
 	padding-left: 3rem;
@@ -100,10 +101,46 @@ ul li {
 	display: inline-flex;
 	flex-direction: column;
 }
+label {
+	font-size: .85rem;
+	font-weight: 700;
+	font-family: "Assistant", sans-serif;
+	color: rgba(0, 0, 0, 0.755);
+}
 input, label {
 	display: flex;
 	flex-direction: column;
 }
 input {
 	margin-right: 5rem;
+	width: 15rem; 
+	margin-top: .1rem;
+	height: 1.6rem;
+	margin-left: .1rem;
+	outline: none;
+}
+input:focus {
+	outline: none;
+	border: 1px solid #f9972d;
+}
+button {
+	margin-left: 3.5rem;
+	margin-top: 2rem;
+	background-color:#f9972d;
+	padding: 1rem 2rem 1rem 2rem;
+	border-radius: 0.5rem;
+	border: none;
+	font-family: "Assistant", sans-serif;
+	font-size: 1.2rem;
+	box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.347);
+	color: white;
+}
+p {
+	margin-left: 3rem;
+	margin-top: 2rem;
+	font-family: "Assistant", sans-serif;
+}
+a {
+	color: #f9972d;
+	text-decoration: none;
 }

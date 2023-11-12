@@ -6,9 +6,9 @@
     <title>Form Exercise</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Monoton&family=Pridi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Monoton&family=Poppins&display=swap" rel="stylesheet">
     <link href="media/css/index.css" rel="stylesheet"> 
-    <!-- font families: Monoton (titles), Fredericka the Great (subs), Pridi (paras)-->
+    <!-- font families: Monoton (titles), Poppins (subs), Assistant (paras)-->
 
 </head>
 <body>
@@ -21,10 +21,10 @@
                 <h2>
                     Welcome to Minos; the tip of the horn, and the broad side of the desert. 
                     We offer a rare chance at fortune for those willing to get their hands dirty.
-                    Get gritty with Minos's expert team of archeologists in a desert hamada scan across the Great Sahara. 
+                    Get gritty with Minos's expert team of archeologists in a desert hamada dig across the Great Sahara. 
                     Unearth the gold. 
                 </h2>
-                <h2>Fill out the form below to sign up for a dig.</h2>
+                <h2>Fill out the form below to sign up.</h2>
             </article>
             <div id="sign-up-area">
                 <h2>Let's do this!</h2>
@@ -33,11 +33,11 @@
                             <ul>
                                 <li>
                                     <label for="fname">First Name:</label>
-                                    <input type="text" name="fname" id="fname" value="First Name">
+                                    <input type="text" name="fname" id="fname"required>
                                 </li>
                                 <li>
                                     <label for="lname">Last Name:</label>
-                                    <input type="text" name="lname" id="lname" value="Last Name">
+                                    <input type="text" name="lname" id="lname">
                                 </li>
                             </ul>
                         </div>
@@ -46,11 +46,11 @@
                             <ul>
                                 <li>
                                     <label for="email">E-mail address:</label>
-                                    <input type="email" name="email" id="email" value="E-mail">
+                                    <input type="email" name="email" id="email"required>
                                 </li>
                                 <li>
                                     <label for="phone">Phone Number:</label>
-                                    <input type="text" name="phone" id="phone" value="555-555-5555">
+                                    <input type="text" name="phone" id="phone">
                                 </li>
                             </ul>
                         </div>
@@ -59,16 +59,18 @@
                             <ul>
                                 <li>
                                     <label for="password">Password:</label>
-                                    <input type="text" name="password" id="password">
+                                    <input type="password" name="password" id="password" required>
                                 </li>
                                 <li>
                                     <label for="cpassword">Confirm Password:</label>
-                                    <input type="text" name="cpassword" id="cpassword">
+                                    <input type="password" name="cpassword" id="cpassword" required>
                                 </li>
                             </ul>
                         </div>
                 </form>
             </div>
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="none">Log in</a></p>
         </div>
     </div>
 </body>
