@@ -135,6 +135,13 @@ button {
 	box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.347);
 	color: white;
 }
+button:hover {
+	cursor: pointer;
+}
+button:active {
+	box-shadow: none;
+	transform: translate(.1rem, .1rem);
+}
 p {
 	margin-left: 3rem;
 	margin-top: 2rem;
@@ -143,4 +150,8 @@ p {
 a {
 	color: #f9972d;
 	text-decoration: none;
+}
+footer {
+	text-align: right;
+	margin-right: 1rem;
 }
