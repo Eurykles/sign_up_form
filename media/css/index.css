@@ -63,7 +63,7 @@ html, body {
 }
 #skull h1 {
 	text-align: center;
-	margin-top: 12rem;
+	margin-top: 11rem;
 	background-color: rgba(245, 245, 245, 0.726);
 	font-size: 5rem;
 	color: black;
@@ -142,16 +142,26 @@ button:active {
 	box-shadow: none;
 	transform: translate(.1rem, .1rem);
 }
-p {
+#account_check {
 	margin-left: 3rem;
 	margin-top: 2rem;
 	font-family: "Assistant", sans-serif;
+}
+#confirm_password p {
+	margin-top: 0;
+	margin-left: .1rem;
+	font-size: .8rem;
+	color: red;
 }
 a {
 	color: #f9972d;
 	text-decoration: none;
 }
-footer {
+footer p {
 	text-align: right;
 	margin-right: 1rem;
+	bottom: .5rem;
+	position: absolute;
+	right: .5rem;
+	font-size: .8rem;
 }

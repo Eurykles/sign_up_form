@@ -15,6 +15,7 @@
         var cpass = document.getElementById("cpassword");
 
 
+
     </script>
 </head>
 <body>
@@ -34,7 +35,7 @@
             </article>
             <div id="sign-up-area">
                 <h2>Let's do this!</h2>
-                <form>
+                <form action="https://google.com">
                         <div id="name">
                             <ul>
                                 <li>
@@ -67,16 +68,17 @@
                                     <label for="password">Password:</label>
                                     <input type="password" name="password" id="password" required>
                                 </li>
-                                <li>
+                                <li id="confirm_password">
                                     <label for="cpassword">Confirm Password:</label>
                                     <input type="password" name="cpassword" id="cpassword" required>
+                                    <p>*Passwords don't match</p>
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                    <button type="submit">Create Account</button>
                 </form>
-            </div>
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="none">Log in</a></p>
+            <p id="account_check">Already have an account? <a href="none">Log in</a></p>
             <footer>
                 <p>@Cayce Harwood Novemeber, 2023. For display purposes only.</p>
             </footer>
