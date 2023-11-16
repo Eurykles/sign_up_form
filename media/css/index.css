@@ -61,17 +61,28 @@ html, body {
 	background-size: cover;
 	grid-area: a;
 }
-#skull h1 {
+#skull_media {
 	text-align: center;
-	margin-top: 11rem;
+	margin-top: 28%;
 	background-color: rgba(245, 245, 245, 0.726);
 	font-size: 5rem;
-	color: black;
-	font-family: "Monoton", sans-serif;
+	color: rgba(0, 0, 0, 0.899);
+	font-family: "Ewert", sans-serif;
 	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+#skull_media h1 {
+	display: inline;
+	margin-left: 1rem;
+}
+#skull_media img {
+	display: inline-block;
 }
 #spine {
-	padding-top: 6rem;
+	margin: auto;
 	grid-area: b;
 }
 article h2 {
@@ -117,7 +128,6 @@ input {
 	margin-top: .1rem;
 	height: 1.6rem;
 	margin-left: .1rem;
-	outline: none;
 }
 input:focus {
 	outline: none;
@@ -151,8 +161,9 @@ button:active {
 	margin-top: 0;
 	margin-left: .1rem;
 	font-size: .8rem;
-	color: red;
-	visibility: hidden;
+	color: rgba(255, 0, 0, 0);
+	transition-duration: 200ms;
+	transition-property: color;
 }
 a {
 	color: #f9972d;
