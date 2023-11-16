@@ -147,11 +147,12 @@ button:active {
 	margin-top: 2rem;
 	font-family: "Assistant", sans-serif;
 }
-#confirm_password p {
+#confirmation_text {
 	margin-top: 0;
 	margin-left: .1rem;
 	font-size: .8rem;
 	color: red;
+	visibility: hidden;
 }
 a {
 	color: #f9972d;

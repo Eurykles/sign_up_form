@@ -9,14 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Monoton&family=Poppins&display=swap" rel="stylesheet">
     <link href="media/css/index.css" rel="stylesheet"> 
     <!-- font families: Monoton (titles), Poppins (subs), Assistant (paras)-->
-
-    <script>
-        var pass = document.getElementById("password");
-        var cpass = document.getElementById("cpassword");
-
-
-
-    </script>
 </head>
 <body>
     <div id="page-container">
@@ -40,7 +32,7 @@
                             <ul>
                                 <li>
                                     <label for="fname">First Name:</label>
-                                    <input type="text" name="fname" id="fname"required>
+                                    <input type="text" name="fname" id="fname" required>
                                 </li>
                                 <li>
                                     <label for="lname">Last Name:</label>
@@ -53,7 +45,7 @@
                             <ul>
                                 <li>
                                     <label for="email">E-mail address:</label>
-                                    <input type="email" name="email" id="email"required>
+                                    <input type="email" name="email" id="email" required>
                                 </li>
                                 <li>
                                     <label for="phone">Phone Number:</label>
@@ -71,12 +63,12 @@
                                 <li id="confirm_password">
                                     <label for="cpassword">Confirm Password:</label>
                                     <input type="password" name="cpassword" id="cpassword" required>
-                                    <p>*Passwords don't match</p>
+                                    <p id="confirmation_text">*Passwords don't match</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <button type="submit">Create Account</button>
+                    <button type = "submit" id="submit_button">Create Account</button>
                 </form>
             <p id="account_check">Already have an account? <a href="none">Log in</a></p>
             <footer>
@@ -85,4 +77,32 @@
         </div>
     </div>
 </body>
+<script>
+    // animation frame to check for password matches, and required fields 
+    function animate() {
+        window.requestAnimationFrame(animate);
+        var submitButton = document.getElementById("submit_button");
+        var pass = document.getElementById("password").value;
+        var cpass = document.getElementById("cpassword").value;
+        var fname = document.getElementById("fname").value;
+        var email = document.getElementById("email").value;
+
+        // displays an error message when passwords aren't matching
+        function passwordCheck() {
+        if (pass === cpass) {
+            document.getElementById("confirmation_text").style.visibility = "hidden";
+        }
+        else {
+            document.getElementById("confirmation_text").style.visibility = "visible";
+        }
+
+        // submit button becomes enabled when passwords match
+        if (pass === cpass) {
+            submitButton.disabled = false;
+        } else submitButton.disabled = true;
+    }
+        passwordCheck();
+    }
+    animate();
+</script>
 </html>
