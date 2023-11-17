@@ -64,9 +64,9 @@ html, body {
 #skull_media {
 	text-align: center;
 	margin-top: 28%;
-	background-color: rgba(245, 245, 245, 0.726);
+	background-color: #332f2abf;
 	font-size: 5rem;
-	color: rgba(0, 0, 0, 0.899);
+	color: rgba(255, 255, 255, 0.899);
 	font-family: "Ewert", sans-serif;
 	padding: 0.5rem;
 	display: flex;
@@ -80,6 +80,7 @@ html, body {
 }
 #skull_media img {
 	display: inline-block;
+	color: white;
 }
 #spine {
 	margin: auto;
@@ -129,6 +130,11 @@ input {
 	height: 1.6rem;
 	margin-left: .1rem;
 }
+#cpassword {
+	transition-duration: 200ms;
+	transition-property: all;
+
+}
 input:focus {
 	outline: none;
 	border: 1px solid #f9972d;
@@ -158,12 +164,12 @@ button:active {
 	font-family: "Assistant", sans-serif;
 }
 #confirmation_text {
-	margin-top: 0;
+	margin-top: .1rem;
 	margin-left: .1rem;
 	font-size: .8rem;
 	color: rgba(255, 0, 0, 0);
 	transition-duration: 200ms;
-	transition-property: color;
+	transition-property: all;
 }
 a {
 	color: #f9972d;

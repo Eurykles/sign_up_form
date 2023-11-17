@@ -71,7 +71,7 @@
                             </ul>
                         </div>
                     </div>
-                    <button type = "submit" id="submit_button">Create Account</button>
+                    <button type ="submit" id="submit_button">Create Account</button>
                 </form>
             <p id="account_check">Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a></p>
             <footer>
@@ -95,13 +95,18 @@
         function passwordCheck() {
         if (pass === cpass) {
             document.getElementById("confirmation_text").style.color = "rgba(255, 0, 0, 0)";
+            cpassFrame.style.boxShadow = "none";
         }
         else if (cpass != pass && cpass.length != 0) {
             document.getElementById("confirmation_text").style.color = "rgba(255,0 ,0, 255)";
-        } else document.getElementById("confirmation_text").style.color = "rgba(255, 0, 0, 0)";
+            cpassFrame.style.boxShadow = "0 0 3px #CC0000";
+        } else {
+            document.getElementById("confirmation_text").style.color = "rgba(255, 0, 0, 0)";
+            cpassFrame.style.boxShadow = "none";
+        }
 
         // submit button becomes enabled when passwords match
-        if (pass === cpass && cpass != 0) {
+        if (pass === cpass) {
             submitButton.disabled = false;
         } else submitButton.disabled = true;
     }
