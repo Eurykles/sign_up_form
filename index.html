@@ -62,11 +62,11 @@
                                 <li>
                                     <label for="password">Password:</label>
                                     <input type="password" name="password" id="password" required>
+                                    <p id="confirmation_text">*Passwords must match</p>
                                 </li>
                                 <li id="confirm_password">
                                     <label for="cpassword">Confirm Password:</label>
                                     <input type="password" name="cpassword" id="cpassword" required>
-                                    <p id="confirmation_text">*Passwords must match</p>
                                 </li>
                             </ul>
                         </div>
@@ -88,6 +88,7 @@
         var pass = document.getElementById("password").value;
         var cpass = document.getElementById("cpassword").value;
         var cpassFrame = document.getElementById("cpassword");
+        var passFrame = document.getElementById("password");
         var fname = document.getElementById("fname").value;
         var email = document.getElementById("email").value;
 
@@ -96,13 +97,16 @@
         if (pass === cpass) {
             document.getElementById("confirmation_text").style.color = "rgba(255, 0, 0, 0)";
             cpassFrame.style.boxShadow = "none";
+            passFrame.style.boxShadow = "none";
         }
         else if (cpass != pass && cpass.length != 0) {
             document.getElementById("confirmation_text").style.color = "rgba(255,0 ,0, 255)";
             cpassFrame.style.boxShadow = "0 0 3px #CC0000";
+            passFrame.style.boxShadow = "0 0 3px #CC0000";
         } else {
             document.getElementById("confirmation_text").style.color = "rgba(255, 0, 0, 0)";
             cpassFrame.style.boxShadow = "none";
+            passFrame.style.boxShadow = "none";
         }
 
         // submit button becomes enabled when passwords match

@@ -66,7 +66,7 @@ html, body {
 	margin-top: 28%;
 	background-color: #332f2abf;
 	font-size: 5rem;
-	color: rgba(255, 255, 255, 0.899);
+	color: rgba(255, 255, 255);
 	font-family: "Ewert", sans-serif;
 	padding: 0.5rem;
 	display: flex;
@@ -133,7 +133,10 @@ input {
 #cpassword {
 	transition-duration: 200ms;
 	transition-property: all;
-
+}
+#password {
+	transition-duration: 200ms;
+	transition-property: all;
 }
 input:focus {
 	outline: none;
